@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery登录和注册切换表单</title>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/jquery.min.js">  </script>
+</head>
+<body id="body">
+    <div class="wrap">
+<ul>
+    <li>
+        <a href="javascript:void(0)">一級菜單</a>
+        <ul>
+            <a href="javascript:void(0)">二級菜單1</a>
+            <a href="javascript:void(0)">二級菜單2</a>
+            <a href="javascript:void(0)">二級菜單3</a>
+        </ul>
+    </li>
+    <li>
+        <a href="javascript:void(0)">一級菜單</a>
+        <ul>
+            <a href="javascript:void(0)">二級菜單4</a>
+            <a href="javascript:void(0)">二級菜單5</a>
+            <a href="javascript:void(0)">二級菜單6</a>
+        </ul>
+    </li>
+    <li>
+        <a href="javascript:void(0)">一級菜單</a>
+        <ul>
+            <a href="javascript:void(0)">二級菜單7</a>
+            <a href="javascript:void(0)">二級菜單8</a>
+            <a href="javascript:void(0)">二級菜單9</a>
+        </ul>
+    </li>
+</ul>
+</div>
+</body>
+
+<script>
+    $(function(){
+$('.wrap>ul>li').mouseover(function(){
+    $(this).children('ul').css('display','block');
+})
+$('.wrap>ul>li').mouseout(function(){
+    $(this).children('ul').hide();
+    })
+})
+</script>
+<style>
+   .wrap li ul{
+       display: block;
+       position: absolute;
+       top:30px;
+       display: none;
+   }
+</style>
+</html>
