@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery登录和注册切换表单</title>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.min.css">
+
+    
+    <script src="./js/jquery.min.js">  </script>
+    <style>
+      .phone{
+           width: 500px;
+           height: 380px;
+           border-style: solid;
+          padding-left: 20px;
+          padding-top: 20px;
+          margin: 55px auto;
+       }
+       .phone a{
+           display: block;
+       }
+        a:hover{
+           
+            transform: translate(0px,-5px);  
+               
+                background-color: #eee;
+        }
+        .nav{
+            height: 41px;
+            border-top: 3px solid #ff8500;
+            border-bottom: 1px solid #edeef0;
+            background-color: #fff;
+            line-height: 41px;
+        }
+        .nav a{
+            /* a是行内元素，要轉換行内塊元素 */
+            display: inline-block;
+            height: 41px;
+            padding: 0 20px;
+            font-size: 12px;
+            text-decoration: none;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#">新浪導航</a>
+        <a href="#">手機新浪網</a>
+        <a href="#">首頁</a>
+        <a href="#">移動客戶端</a>
+    </div>
+    <div class="phone">
+        <table >
+        
+            <tr>
+                <td>性別:</td>
+                <td>
+                    <input type="radio" name="sex" id="man" checked> 男
+                    <input type="radio" name="sex" id="woman"> 女 
+                </td>
+            </tr>
+            <tr >
+                <td>生日:</td>
+                <td>
+                  <select>
+                      <option>--請選擇年--</option>
+                      <option>2001</option>
+                      <option>2002</option>
+                  </select>
+                  <select>
+                    <option>--請選擇月--</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                </select>
+                <select>
+                    <option>--請選擇日--</option>
+                    <option>2001</option>
+                    <option>2002</option>
+               
+                </td>
+            </tr>
+            <tr>
+                <td>所在地區</td>
+                <td>
+                    <input type="text" />
+                </td>
+            </tr>
+            <!---->
+            <tr >
+                <td>婚姻狀況</td>
+                <td>
+                    <input type="radio" name="marry" id="marry"> 已婚
+                    <input type="radio" name="marry" id="married"> 未婚 
+                </td>
+            </tr>
+            <tr >
+                <td>喜歡類型：</td>
+                <td>
+                    <input type="checkbox" name="le" id="marry"> 可愛 
+                    <input type="checkbox" name="loe" id="marry"> 傲嬌
+                    <input type="checkbox" name="e" id="marry"> 都喜歡
+                </td>
+            </tr>
+        </thead>
+        
+        </table>
+    </div>
+</body>
