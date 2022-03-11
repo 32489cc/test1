@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery登录和注册切换表单</title>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    <script src="./js/jquery.min.js">  </script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .tb-promo{
+            position: relative;
+         
+            width: 679px;
+            height: 357px;
+            margin: 100px auto;
+            border: 10px solid yellow;
+        }
+        .prev{  
+            left: 0;
+            margin-top: -15px;  
+           border-top-right-radius: 13px;
+           border-bottom-right-radius: 13px;
+        }
+        .next{
+            right: 0;
+            margin-top: -15px;
+            text-decoration: none;
+           border-top-left-radius: 13px;
+           border-bottom-left-radius: 13px;
+        }
+        .nav{
+            position: absolute;
+            top: 50%;
+            width: 20px;
+            height: 30px;
+            background-color:rgba(0, 0, 0, 0.3);
+            text-align: center;/*水平居中*/
+            line-height: 31px;/*垂直居中*/
+            color: #fff;
+            text-decoration: none;
+        }
+        .promo-nav{
+             position: absolute;
+             left: 50%;
+             margin-left: -60px;
+             bottom: 15px;
+             width: 120px;
+             height: 25px;
+             background-color:rgba(0, 0, 0, 0.3) ;
+             border-radius: 5px;
+        }
+        .promo-nav li{
+            width: 20px;
+            height: 20px;
+            list-style: none;
+            float: left;
+            border-radius: 50%;
+            background-color: #fff;
+            margin: 2px;
+        }
+    </style>
+    <body>
+        <div class="tb-promo">
+            <img src="pjsk1.png">
+            <a href="#" class="prev nav">&lt; </a>
+            <a href="#" class="next nav">&gt; </a>
+            <ul class="promo-nav">
+                <li>
+                </li>
+                <li>
+                </li>
+                <li>
+                </li>
+                <li>
+                </li>
+                <li>
+                </li>
+            </ul>
+        </div>
+    </body>
